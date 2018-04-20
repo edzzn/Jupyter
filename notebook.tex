@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{Demo}
+    \title{Presentacion}
     
     
     
@@ -280,131 +280,165 @@
     
 
     
-    \section{Demo Jupyter}\label{demo-jupyter}
+    Edisson Reinozo
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-Podemos hacer muchas cosas con nuestras libretas de Jupyter\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.04\columnwidth}\raggedright\strut
-Markdown\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+edzzn.com
 
-Podemos utilizar Markdown para fomatear el texto:
+    \includegraphics{https://2.bp.blogspot.com/-hQWgIdFlf2M/Wpa6D9HEqNI/AAAAAAAAIaQ/MeYAQNPF0Qs1HzYxRdA6nQbcys_D0mKggCLcBGAs/s1600/Figura1LogoJupyter.png}
+
+edzzn.com/jupyter
+
+    \section{Tabla de contenidos}\label{tabla-de-contenidos}
+
+\begin{itemize}
+\tightlist
+\item
+  ¿Qué es Jupyter?
+\item
+  Instalación de Jupyter Notebooks
+\item
+  Tour / Demo
+\item
+  Plugins
+\item
+  Kernels
+\item
+  Instalación de la kernel de R
+\item
+  Más cosas interesantes
+\end{itemize}
+
+    \section{¿Qúe es Jupyter?}\label{quxfae-es-jupyter}
+
+\begin{itemize}
+\tightlist
+\item
+  Jupyter nacio como IPython
+\item
+  IPython es una shell interactiva
+\item
+  Jupyter es IPython pero para el navegador
+\item
+  Jupyter empezó como un proyecto para Python, pero se extendio para
+  permitir utilizar otros lenguajes
+\end{itemize}
+
+    \begin{quote}
+\subsection{\texorpdfstring{\textbf{Aplicación web} que permite crear y
+compartir documentos que contienen \textbf{código fuente, ecuaciones,
+visualizaciones y
+texto}}{Aplicación web que permite crear y compartir documentos que contienen código fuente, ecuaciones, visualizaciones y texto}}\label{aplicaciuxf3n-web-que-permite-crear-y-compartir-documentos-que-contienen-cuxf3digo-fuente-ecuaciones-visualizaciones-y-texto}
+\end{quote}
+
+    \section{Instalación}\label{instalaciuxf3n}
+
+Instalación de IPython y Jupyter
+
+\textbf{Conda}
 
 \begin{verbatim}
-# H1
-## H2
-### H3
+conda install jupyter notebook
+
+conda install matplotlib
 \end{verbatim}
 
-\subsubsection{HTML}\label{html}
-
-Es posible insertar \textbf{HTML} dentro de nuestras celdas de
-\emph{Markdonw}
+\textbf{pip}
 
 \begin{verbatim}
-<div>
-    <span style="color:#ff0000;">P</span>
-    <span style="color:#ff4000;">o</span>
-    <span style="color:#ff7f00;">r</span>
-    <span style="color:#ffbf00;"> </span>
-    <span style="color:#ffff00;">e</span>
-    <span style="color:#80ff00;">j</span>
-    <span style="color:#00ff00;">e</span>
-    <span style="color:#00ff80;">m</span>
-    <span style="color:#00ffff;">p</span>
-    <span style="color:#0080ff;">l</span>
-    <span style="color:#0000ff;">o</span>
-</div>
+pip install --upgrade pip
+pip install jupyter notebook
+
+pip install matplotlib
 \end{verbatim}
 
-{R}{a}{i}{n}{b}{o}{w}{s}{ }{a}{r}{e}{ }{c}{o}{l}{o}{r}{f}{u}{l}{
-}{a}{n}{d}{ }{l}{o}{v}{e}{l}{y}
+    \section{Ejecutar Jupyter}\label{ejecutar-jupyter}
 
-    O podemos definir nuestro propio estilo CSS
+Se utiliza \texttt{jupyter\ notebook} para inicializar la libreta
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{o}{\PYZpc{}\PYZpc{}}\PY{k}{html}
-        \PYZlt{}style\PYZgt{}
-        .rainbow \PYZob{}
-          background\PYZhy{}image: \PYZhy{}webkit\PYZhy{}gradient( linear, left top, right top, color\PYZhy{}stop(0, \PYZsh{}f22), color\PYZhy{}stop(0.15, \PYZsh{}f2f), color\PYZhy{}stop(0.3, \PYZsh{}22f), color\PYZhy{}stop(0.45, \PYZsh{}2ff), color\PYZhy{}stop(0.6, \PYZsh{}2f2),color\PYZhy{}stop(0.75, \PYZsh{}2f2), color\PYZhy{}stop(0.9, \PYZsh{}ff2), color\PYZhy{}stop(1, \PYZsh{}f22) );
-          background\PYZhy{}image: gradient( linear, left top, right top, color\PYZhy{}stop(0, \PYZsh{}f22), color\PYZhy{}stop(0.15, \PYZsh{}f2f), color\PYZhy{}stop(0.3, \PYZsh{}22f), color\PYZhy{}stop(0.45, \PYZsh{}2ff), color\PYZhy{}stop(0.6, \PYZsh{}2f2),color\PYZhy{}stop(0.75, \PYZsh{}2f2), color\PYZhy{}stop(0.9, \PYZsh{}ff2), color\PYZhy{}stop(1, \PYZsh{}f22) );
-          color:transparent;
-          \PYZhy{}webkit\PYZhy{}background\PYZhy{}clip: text;
-          background\PYZhy{}clip: text;
-        \PYZcb{}
-        \PYZlt{}/style\PYZgt{}
-\end{Verbatim}
+\begin{verbatim}
+mkdir jupyter
+cd jupyter
 
+jupyter notebook
+\end{verbatim}
 
-    
-    \begin{verbatim}
-<IPython.core.display.HTML object>
-    \end{verbatim}
+    \section{Probemos Jupyter}\label{probemos-jupyter}
 
-    
-    {Rainbows are colorful and lovely}
+    \section{Kernels}\label{kernels}
 
-    \subsection{LaTeX}\label{latex}
+Kernels permiten utilziar otros lenguajes de progración en Jupyter
 
-Podemos utilizar LaTeX para escribir documentos científicos, documentar
-nuestro código... etc
+    \section{IRKernel - Kernel de R}\label{irkernel---kernel-de-r}
 
-\begin{align}
-    E_0 &= mc^2 \\
-    E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
-  \end{align}
+\begin{figure}
+\centering
+\includegraphics{https://irkernel.github.io/images/irkernel-logo.svg}
+\caption{IRKernel.github.io}
+\end{figure}
 
-\subsection{Código}\label{cuxf3digo}
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-Y por su puesto podemos ejecutar códgio
+\href{https://irkernel.github.io/}{R kernel for Jupyter Notebook}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Hola Mundo!}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
+    \subsubsection{1}\label{section}
 
+\begin{verbatim}
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
+devtools::install_github('IRkernel/IRkernel')
+\end{verbatim}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-Hola Mundo!
+\subsubsection{2 Comprobarción}\label{comprobarciuxf3n}
 
-    \end{Verbatim}
+\begin{verbatim}
+IRkernel::installspec()
 
-    Podemos definir variables, funciones y estas persisten entre celdas
+# Instalarlo en todo el sistema
+IRkernel::installspec(user = FALSE)
+\end{verbatim}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{a} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Hola de nuevo}\PY{l+s+s2}{\PYZdq{}}
-\end{Verbatim}
+    \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
+    \section{Pasos para crear una
+presentación}\label{pasos-para-crear-una-presentaciuxf3n}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{a}\PY{p}{)}
-\end{Verbatim}
+\begin{itemize}
+\tightlist
+\item
+  Crear las transparencias como código o Markdown
+\item
+  View -\textgreater{} Cell Toolbar -\textgreater{} SlideShow
+\item
+  Seleccionar el tipo de Slide ( Parte superior derecha de cada celda)
+\item
+  Guardar, cerrar Jupyter
+\item
+  En la linea de comandos ejecutar:
 
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{jupyter-nbconvert\ Presentacion.ipynb\ -\/-to\ slides}
+  \item
+    \texttt{jupyter-nbconvert\ Presentacion.ipynb\ -\/-to\ slides\ -\/-post\ serve}
+  \end{itemize}
+\end{itemize}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-Hola de nuevo
+    \section{Más cosas interesantes}\label{muxe1s-cosas-interesantes}
 
-    \end{Verbatim}
+\begin{itemize}
+\tightlist
+\item
+  Podemos correrlo en la nube
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}7}]:} \PY{k}{def} \PY{n+nf}{sumar}\PY{p}{(}\PY{n}{num1}\PY{p}{,} \PY{n}{num2}\PY{p}{)}\PY{p}{:}
-            \PY{k}{return} \PY{n}{num1} \PY{o}{+} \PY{n}{num2}
-\end{Verbatim}
+  \begin{itemize}
+  \item
+    Podemos ejecutarlo en AWS, Azure, etc
+  \item
+  \end{itemize}
+\end{itemize}
 
+    \# Gracias \#\# \href{https://edzzn.com/jupyter}{edzzn.com/jupyter}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{sumar}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,}\PY{l+m+mi}{6}\PY{p}{)}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}8}]:} 11
-\end{Verbatim}
-            
 
     % Add a bibliography block to the postdoc
     
